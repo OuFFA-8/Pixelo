@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:ssr": "ng build && ng run products-gallery:server",
     "serve:ssr:products-gallery": "node dist/products-gallery/server/server.mjs"
   },
   "private": true,
