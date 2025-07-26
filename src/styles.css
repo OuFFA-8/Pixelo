@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 dark:bg-gray-900;
+}
+
+swiper-container::part(bullet) {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+}
+
+swiper-container::part(bullet-active) {
+  background-color: #a3e635;
+}

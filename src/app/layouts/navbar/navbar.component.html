@@ -1,0 +1,27 @@
+<nav class="fixed top-0 left-0 right-0 z-50 p-4 transition-all duration-300">
+    <div class="container mx-auto">
+        <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-md shadow-lg rounded-full px-6 py-2">
+            <div class="flex items-center justify-between">
+                <a routerLink="/" class="text-2xl font-bold text-gray-800 dark:text-white">
+                    Pixelo
+                </a>
+                <div class="flex items-center space-x-2">
+                    <button (click)="toggleTheme()"
+                        class="text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 w-10 h-10 flex items-center justify-center rounded-full transition-colors"
+                        aria-label="Toggle theme">
+                        @if (isDarkMode()) { <i class="fa-solid fa-sun text-lg"></i> } @else { <i
+                            class="fa-solid fa-moon text-lg"></i> }
+                    </button>
+                    <a routerLink="/cart"
+                        class="relative bg-primary hover:bg-primary-600 text-white w-10 h-10 flex items-center justify-center rounded-lg transition-colors"
+                        aria-label="View shopping cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        @if (cartItemCount > 0) { <span
+                            class="absolute -top-1 -right-1 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-white dark:border-gray-800">{{
+                            cartItemCount }}</span> }
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
