@@ -1,59 +1,64 @@
-# ProductsGallery
+# 🛍️ Pixelo - Products Gallery Web Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+Welcome to **Pixelo**, a fully functional and beautifully designed e-commerce front-end application. Built from the ground up with Angular, this project demonstrates a modern, responsive, and feature-rich user experience for browsing and managing products from the Fake Store API.
 
-## Development server
+**Live Demo:** [**Click here to explore Pixelo!**](https://pixelo-xsat.vercel.app) 
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 📝 Project Overview
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The primary objective of this project was to build a seamless and engaging e-commerce platform that excels in both functionality and design. The application features an interactive home page with a product slider, a comprehensive product collection with advanced filtering and sorting, dynamic product detail pages, and a complete shopping cart system. The entire project is built with a mobile-first approach and includes a stunning dark mode.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ✨ Features
 
-```bash
-ng generate component component-name
-```
+- **🎨 Modern UI/UX**: A clean, elegant, and fully responsive interface built with Tailwind CSS.
+- **🏠 Interactive Home Page**: A captivating hero section with an auto-playing, fade-effect slider for featured products.
+- **📦 Comprehensive Product Collection**:
+  - Filter products by category using stylish tabs.
+  - Case-insensitive search by product name.
+  - Sort products by Price (Low to High / High to Low) and Name (A-Z).
+- **🚀 Dynamic Routing**: A true single-page application experience with dynamic routing for product details (`/products/:id`) and other pages.
+- **🛒 Full Cart Management**:
+  - Add products to the cart.
+  - Increase/decrease item quantity.
+  - Remove items and clear the entire cart.
+  - State is persisted in local storage.
+- **🌙 Stunning Dark Mode**: A user-friendly dark mode toggle that respects user preferences.
+- **🔔 User Feedback**: Professional toast notifications for actions like adding items to the cart, powered by `ngx-toastr`.
+- **✅ Robust & Optimized**: Built with Angular SSR (Server-Side Rendering) for better performance and SEO.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 🧱 Tech Stack Used
 
-To build the project run:
+- **Framework**: **Angular (v17+)** with Standalone Components & SSR
+- **Styling**: **Tailwind CSS**
+- **UI Components**: **Flowbite**
+- **Slider/Carousel**: **Swiper.js** (as Custom Elements)
+- **Icons**: **Font Awesome**
+- **Notifications**: **ngx-toastr**
+- **Language**: TypeScript
+- **State Management**: RxJS (BehaviorSubject) for reactive cart state.
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🚀 Getting Started
 
-## Running unit tests
+To get a local copy up and running, follow these simple steps.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Prerequisites
+- Node.js (v18.x or later)
+- Angular CLI (v17.x or later)
 
-```bash
-ng test
-```
+ Open your browser and navigate to `https://pixelo-xsat.vercel.app`.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🧑‍💻 Developed by
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Yusef Alaa**
+- **GitHub:** [@your-github-username](https://github.com/OuFFA-8)
